@@ -1,6 +1,10 @@
 import React  from "react";
 import "./App.scss";
-import State from "./example/State";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import ListToDo from "./todos/ListToDo";
+
+import Nav from "./nav/Nav";
 function App() {
   return (
     <div className="App">
@@ -8,8 +12,22 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
        
        
-        <State />
+        {/* to do list  */}
+        {/* <ListToDo/> */}
+        
+        {/* route */}
       </header>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        />
     </div>
   );
 }
