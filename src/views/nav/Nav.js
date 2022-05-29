@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
 import './Nav.scss'
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+
+  Link , NavLink
 } from "react-router-dom";
 export default class Nav extends Component {
   render() {
     return (
       // <Route>
         <div class="topnav">
-          <a class="active" href="/">Home</a>
-          <a href="/todo">To do</a>
+          <NavLink to="/" activeClassName='active' exact={true}>Home</NavLink>
+          <NavLink to="/todo" activeClassName='active'>To do</NavLink>
+          {/* <Link to="/">Home</Link>
+          <Link to="/todo">To do</Link> */}
+ 
+       
         
       </div>
     // </Route>

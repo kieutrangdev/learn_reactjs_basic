@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import Nav from "./nav/Nav";
 import Home from "./example/Home";
+import Child from "./example/Child";
+import AddComponent from "./example/AddComponent";
 function App() {
   return (
    <Router>
@@ -31,13 +33,13 @@ function App() {
         draggable
         pauseOnHover
         />
-
-
     <Switch>
           <Route path="/todo">
             <ListToDo />
           </Route>
-          
+          {/* <Route path="/job">
+            <Child />
+          </Route> */}
           <Route path="/" exact >
             <Home />
           </Route>
