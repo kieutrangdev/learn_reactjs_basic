@@ -13,6 +13,8 @@ import Nav from "./nav/Nav";
 import Home from "./example/Home";
 import Child from "./example/Child";
 import AddComponent from "./example/AddComponent";
+import ListUsers from "./user/ListUsers";
+import DetailUser from "./user/DetailUser";
 function App() {
   return (
    <Router>
@@ -36,6 +38,12 @@ function App() {
     <Switch>
           <Route path="/todo">
             <ListToDo />
+          </Route>
+          <Route path="/user" exact>
+            <ListUsers />
+          </Route>
+          <Route path="/user/:id">
+            <DetailUser />
           </Route>
           {/* <Route path="/job">
             <Child />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from "react-router";
-
+import Color from '../HOC/Color';
  class Home extends Component {
    componentDidMount()
    {
@@ -14,4 +14,4 @@ import { withRouter } from "react-router";
     )
   }
 }
-export default withRouter(Home)
+export default Color(Home)
