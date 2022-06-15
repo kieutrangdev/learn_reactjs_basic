@@ -39,6 +39,9 @@ function App() {
           <Route path="/todo">
             <ListToDo />
           </Route>
+          <Route path="/about">
+            <AddComponent />
+          </Route>
           <Route path="/user" exact>
             <ListUsers />
           </Route>

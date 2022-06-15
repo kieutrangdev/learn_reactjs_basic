@@ -23,7 +23,7 @@ export default class AddComponent extends Component {
           alert('Missing required params');
           return;
         }
-        console.log(this.state);
+        
         this.props.addNewJob({
           id: Math.floor(Math.random() *1001),
           title : this.state.titleJob,

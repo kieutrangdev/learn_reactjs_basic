@@ -12,6 +12,7 @@ export default class Nav extends Component {
           <NavLink to="/" activeClassName='active' exact={true}>Home</NavLink>
           <NavLink to="/todo" activeClassName='active'>To do</NavLink>
           <NavLink to="/user" activeClassName='active'>User</NavLink>
+          <NavLink to="/about" activeClassName='active'>About</NavLink>
           {/* <Link to="/">Home</Link>
           <Link to="/todo">To do</Link> */}
  
